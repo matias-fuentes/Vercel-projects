@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/toolHero.css" />
+    <link rel="stylesheet" href="/styles/filters.css" />
+    <link rel="stylesheet" href="/styles/pokemonList.css" />
+    <link rel="stylesheet" href="/styles/filler.css" />
+    <link rel="icon" href="logo.jpg" />
+    <title>Developer Challenge</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="layout ds-flex header">
+        <a href="/">
+            <img class="logo" src="/logo.jpg" />
+        </a>
+        <h2 class="logo-title">Developer Challenge</h2>
+    </header>
+
+    <!-- Tool hero -->
+    <div class="layout ds-flex tool-hero mrg-bottom">
+        <h1 class="tool-title">Tool #1: Filter</h1>
+        <p class="tool-description">
+            For this specific tool I've created my own pokedex.json file, and fecthed from it a list of Pokémons, in
+            which you can test the tool and filter by your favourite Pokémons!
+        </p>
+    </div>
+
+    <!-- Filters -->
+    <form class="layout ds-flex filter-container mrg-bottom">
+        <div class="search-bar mrg-bottom">
+            <input type="text" placeholder="Search any Pokémon" class="search" />
+            <button class="search-btn">
+                <img src="/search.png" class="search-logo" />
+            </button>
+        </div>
+        <div class="ds-flex attributes-filter-container">
+            <div>
+                <b>HP:</b>
+                <input type="number" placeholder="Minimum" />
+                <input type="number" placeholder="Maximum" />
+            </div>
+            <div>
+                <b>Attack:</b>
+                <input type="number" placeholder="Minimum" />
+                <input type="number" placeholder="Maximum" />
+            </div>
+            <div>
+                <b>Defense:</b>
+                <input type="number" placeholder="Minimum" />
+                <input type="number" placeholder="Maximum" />
+            </div>
+            <div>
+                <b>Sp. Attack:</b>
+                <input type="number" placeholder="Minimum" />
+                <input type="number" placeholder="Maximum" />
+            </div>
+            <div>
+                <b>Sp. Defense:</b>
+                <input type="number" placeholder="Minimum" />
+                <input type="number" placeholder="Maximum" />
+            </div>
+            <div>
+                <b>Speed:</b>
+                <input type="number" placeholder="Minimum" />
+                <input type="number" placeholder="Maximum" />
+            </div>
+        </div>
+    </form>
+
+    <!-- Pokémons list -->
+    <div id="poke-cards-container" class="layout ds-flex mrg-bottom"></div>
+
+    <!-- Tool hero -->
+    <div class="layout ds-flex tool-hero mrg-bottom">
+        <h1 class="tool-title">Tool #2: Filler</h1>
+        <p class="tool-description">
+            For the filler tool I have contacted with the TwelveData API, where, among other things, you can quote
+            any stock you want! Wanna know how much costs an MSFT (Microsoft) stock? Check it out!
+        </p>
+    </div>
+
+    <!-- Stock search -->
+    <form id="filler-container" class="layout ds-flex filter-container mrg-bottom">
+        <div class="search-bar mrg-bottom">
+            <input id="stock-search" type="text" placeholder="Search any stock by symbol (AAPL, MSFT, AMZN)"
+                class="search" />
+            <button class="search-btn">
+                <img src="/search.png" class="search-logo" />
+            </button>
+        </div>
+    </form>
+
+    <!-- Warning message -->
+    <div id="warning-message-container" class="layout ds-flex mrg-bottom">
+        <h1 id="warning-message" class="mrg-bottom">
+            ** WARNING!! DUE TO THE LIMITS OF THE FREE PLAN OF TWELVEDATA, A MAXIMUM OF 8 REQUESTS PER MINUTE IS
+            ONLY AVAILABLE, AS WELL AS 800 REQUESTS PER DAY. **
+        </h1>
+    </div>
+
+    <!-- Stock info -->
+    <div class="layout mrg-bottom stock-info-container">
+        <h3>Symbol: <span></span></h3>
+        <div id="header-data-container" class="ds-flex">
+            <h3>Name: <span id="name"></span></h3>
+            <h3>Price: $<span id="price"></span></h3>
+        </div>
+        <hr class="mrg-bottom" />
+        <h4>Exchange: <span></span></h4>
+        <h4>Currency: <span id="currency"></span></h4>
+        <h4>Close datetime: <span></span></h4>
+        <h4>Open: $<span></span></h4>
+        <h4>High: $<span></span></h4>
+        <h4>Low: $<span></span></h4>
+        <h4>Volume: $<span></span></h4>
+        <h4>Previous close: $<span></span></h4>
+        <h4>Change: <span></span>%</h4>
+        <h4>Percent change: <span></span>%</h4>
+        <h4>Average volume: $<span></span></h4>
+    </div>
+
+    <script src="filter-tool.js"></script>
+    <script src="filler-tool.js"></script>
+</body>
+
+</html>

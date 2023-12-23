@@ -1,0 +1,29 @@
+#warning-message-container {
+    display: flex;
+    justify-content: center;
+}
+
+#warning-message {
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 2.4rem;
+    padding: 1.6rem;
+    text-align: center;
+}
+
+.stock-info-container h3,
+h4 {
+    margin-bottom: 2.4rem;
+}
+
+.stock-info-container h3 {
+    font-size: 3.2rem;
+}
+
+.stock-info-container h4 {
+    font-size: 2.4rem;
+}
+
+#name {
+    margin-right: 1.6rem;
+}

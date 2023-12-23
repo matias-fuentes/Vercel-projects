@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <title>Google Images</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css"
+    />
+    <link href="/search.css" rel="stylesheet" />
+    <link href="google-logo.ico" rel="icon" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="nav_bar">
+                <li class="nav-links" id="gmail">
+                    <a href="/">Search</a>
+                </li>
+                <li class="nav-links">
+                    <a href="/advanced-search.html">Advanced</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- GOOGLE IMG -->
+    <div class="google">
+        <a href="/image-search.html" id="google_logo"
+            ><img
+                class="google-logo"
+                src="/google.png"
+                alt=" photo google-logo_zpspkcztsjo.png"
+        /></a>
+    </div>
+
+    <!-- FORM SEARCH -->
+    <div class="form-container">
+        <form action="https://www.google.com/search" class="form">
+            <div class="search-bar-container">
+                <input type="hidden" name="tbm" value="isch" />
+                <input
+                    type="text"
+                    name="q"
+                    id="form-search"
+                    placeholder="Search Google or type URL"
+                />
+                <input class="search" type="image" src="/search.svg" />
+            </div>
+        </form>
+        <div class="buttons"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <ul class="footer-left">
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul class="footer-right">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </footer>
+</body>

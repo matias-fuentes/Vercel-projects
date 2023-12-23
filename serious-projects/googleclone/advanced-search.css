@@ -1,0 +1,68 @@
+.nav-container {
+  padding: 0 3.2rem;
+}
+
+* {
+  font-family: arial, sans-serif;
+  overflow: hidden;
+}
+
+hr {
+  border-top: 1px;
+}
+
+.logo-container {
+  padding: 0.8rem;
+}
+
+.logo {
+  width: 96px;
+  object-fit: contain;
+}
+
+.title {
+  color: #D93025;
+  font-size: 20px;
+  margin-bottom: 1.6rem;
+}
+
+main {
+  padding-left: 4.8rem;
+}
+
+.main-container {
+  width: 1440px;
+}
+
+.inputs-row {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 32px;
+  margin-right: 500px;
+}
+
+.label {
+  width: 20%;
+}
+
+.inputs-row > input {
+  height: 24px;
+  width: 30%;
+  margin-right: 1.6rem;
+}
+
+.submit-button {
+  background-color: #357ae8;
+  border: 1px solid #2f5bb7;
+  color: white;
+  font-weight: bold;
+  padding: 0.4rem;
+  margin-top: 0.8rem;
+}
+
+.submit-button:hover {
+  background-color: rgb(32, 96, 192);
+}

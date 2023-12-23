@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: white;
+    --accent-color: #7443ff;
+    --transparent-accent-color: #7443ff99;
+    --dark-accent-color: #643ada;
+}
+
+.layout {
+    padding: 0rem 19.2rem;
+}
+
+.ds-flex {
+    display: flex;
+}
+
+.mrg-bottom {
+    margin-bottom: 3.2rem;
+}
